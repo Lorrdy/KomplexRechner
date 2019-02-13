@@ -1,0 +1,10 @@
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe.config
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.pdb
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csprojAssemblyReference.cache
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.Properties.Resources.resources
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.GenerateResource.cache
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.CoreCompileInputs.cache
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb
+H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.MainForm.resources
