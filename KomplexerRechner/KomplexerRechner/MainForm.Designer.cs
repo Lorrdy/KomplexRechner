@@ -69,10 +69,10 @@
             this.GonioRadio.AutoSize = true;
             this.GonioRadio.Location = new System.Drawing.Point(12, 51);
             this.GonioRadio.Name = "GonioRadio";
-            this.GonioRadio.Size = new System.Drawing.Size(75, 17);
+            this.GonioRadio.Size = new System.Drawing.Size(69, 17);
             this.GonioRadio.TabIndex = 1;
             this.GonioRadio.TabStop = true;
-            this.GonioRadio.Text = "Polar Form";
+            this.GonioRadio.Text = "Polarform";
             this.GonioRadio.UseVisualStyleBackColor = true;
             this.GonioRadio.CheckedChanged += new System.EventHandler(this.GonioRadio_CheckedChanged);
             // 
@@ -239,7 +239,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 450);
+            this.ClientSize = new System.Drawing.Size(502, 615);
             this.Controls.Add(this.Btn_DoMath);
             this.Controls.Add(this.KartPanel);
             this.Controls.Add(this.ExponPanel);
@@ -249,7 +249,6 @@
             this.Controls.Add(this.KartRadio);
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GonioPanel.ResumeLayout(false);
             this.GonioPanel.PerformLayout();
             this.ExponPanel.ResumeLayout(false);

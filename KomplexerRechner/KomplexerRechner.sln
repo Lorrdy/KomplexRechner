@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KomplexerRechner", "KomplexerRechner\KomplexerRechner.csproj", "{31A1A1A8-827B-4CBE-9710-D08A3DA29F06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComplexUnitTestProject", "ComplexUnitTestProject\ComplexUnitTestProject.csproj", "{D148A175-11F0-4B79-A908-1029717BA9B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{31A1A1A8-827B-4CBE-9710-D08A3DA29F06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31A1A1A8-827B-4CBE-9710-D08A3DA29F06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31A1A1A8-827B-4CBE-9710-D08A3DA29F06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D148A175-11F0-4B79-A908-1029717BA9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D148A175-11F0-4B79-A908-1029717BA9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D148A175-11F0-4B79-A908-1029717BA9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D148A175-11F0-4B79-A908-1029717BA9B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

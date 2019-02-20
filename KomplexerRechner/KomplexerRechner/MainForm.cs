@@ -12,20 +12,17 @@ namespace KomplexerRechner
 {
     public partial class MainForm : Form
     {
+        ComplexNumber complex = new ComplexNumber();
+
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void KartRadio_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton RB = sender as RadioButton;
-            if(RB.Checked)
+            if (RB.Checked)
             {
                 KartPanel.Enabled = true;
             }
@@ -71,7 +68,27 @@ namespace KomplexerRechner
 
         private void Btn_DoMath_Click(object sender, EventArgs e)
         {
+            if (KartRadio.Checked)
+            {
+                complex.Kar_Real = Convert.ToDouble(InputKarReal.Text);
+                complex.Kar_Imag = Convert.ToDouble(InputKarImag.Text);
 
+                complex.KarToPol();
+
+                InputAmount.Text = Convert.ToString(complex.Amount);
+                InputAngle.Text = Convert.ToString(complex.Angle);
+            }
+
+            if (GonioRadio.Checked)
+            {
+                complex.Amount = Convert.ToDouble(InputAmount.Text);
+                complex.Angle = Convert.ToDouble(InputAngle.Text);
+
+                complex.PolToKar();
+
+                InputKarReal.Text = Convert.ToString(complex.Kar_Real);
+                InputKarImag.Text = Convert.ToString(complex.Kar_Imag);
+            }
         }
     }
 }
