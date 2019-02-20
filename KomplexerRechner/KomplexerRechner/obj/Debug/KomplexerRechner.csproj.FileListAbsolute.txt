@@ -8,3 +8,13 @@ H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\D
 H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
 H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb
 H:\Laufwerk_H\Visual Studio 2017\Projekt\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.MainForm.resources
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe.config
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.pdb
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csprojAssemblyReference.cache
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.MainForm.resources
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.Properties.Resources.resources
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.GenerateResource.cache
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.CoreCompileInputs.cache
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb

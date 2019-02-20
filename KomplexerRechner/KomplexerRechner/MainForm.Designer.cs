@@ -31,18 +31,18 @@
             this.KartRadio = new System.Windows.Forms.RadioButton();
             this.GonioRadio = new System.Windows.Forms.RadioButton();
             this.ExponRadio = new System.Windows.Forms.RadioButton();
-            this.InputReal = new System.Windows.Forms.TextBox();
-            this.InputImag = new System.Windows.Forms.TextBox();
+            this.InputKarReal = new System.Windows.Forms.TextBox();
+            this.InputKarImag = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.GonioPanel = new System.Windows.Forms.Panel();
-            this.InputWinkel = new System.Windows.Forms.TextBox();
-            this.InputBetrag = new System.Windows.Forms.TextBox();
+            this.InputAngle = new System.Windows.Forms.TextBox();
+            this.InputAmount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.ExponPanel = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.InputExpImag = new System.Windows.Forms.TextBox();
+            this.InputExpReal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.KartPanel = new System.Windows.Forms.Panel();
@@ -69,10 +69,10 @@
             this.GonioRadio.AutoSize = true;
             this.GonioRadio.Location = new System.Drawing.Point(12, 51);
             this.GonioRadio.Name = "GonioRadio";
-            this.GonioRadio.Size = new System.Drawing.Size(124, 17);
+            this.GonioRadio.Size = new System.Drawing.Size(75, 17);
             this.GonioRadio.TabIndex = 1;
             this.GonioRadio.TabStop = true;
-            this.GonioRadio.Text = "Goniometrische Form";
+            this.GonioRadio.Text = "Polar Form";
             this.GonioRadio.UseVisualStyleBackColor = true;
             this.GonioRadio.CheckedChanged += new System.EventHandler(this.GonioRadio_CheckedChanged);
             // 
@@ -88,21 +88,21 @@
             this.ExponRadio.UseVisualStyleBackColor = true;
             this.ExponRadio.CheckedChanged += new System.EventHandler(this.ExponRadio_CheckedChanged);
             // 
-            // InputReal
+            // InputKarReal
             // 
-            this.InputReal.Location = new System.Drawing.Point(35, 3);
-            this.InputReal.Name = "InputReal";
-            this.InputReal.Size = new System.Drawing.Size(140, 20);
-            this.InputReal.TabIndex = 3;
-            this.InputReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputKarReal.Location = new System.Drawing.Point(35, 3);
+            this.InputKarReal.Name = "InputKarReal";
+            this.InputKarReal.Size = new System.Drawing.Size(140, 20);
+            this.InputKarReal.TabIndex = 3;
+            this.InputKarReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
-            // InputImag
+            // InputKarImag
             // 
-            this.InputImag.Location = new System.Drawing.Point(205, 3);
-            this.InputImag.Name = "InputImag";
-            this.InputImag.Size = new System.Drawing.Size(140, 20);
-            this.InputImag.TabIndex = 4;
-            this.InputImag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputKarImag.Location = new System.Drawing.Point(205, 3);
+            this.InputKarImag.Name = "InputKarImag";
+            this.InputKarImag.Size = new System.Drawing.Size(140, 20);
+            this.InputKarImag.TabIndex = 4;
+            this.InputKarImag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
             // label1
             // 
@@ -124,8 +124,8 @@
             // 
             // GonioPanel
             // 
-            this.GonioPanel.Controls.Add(this.InputWinkel);
-            this.GonioPanel.Controls.Add(this.InputBetrag);
+            this.GonioPanel.Controls.Add(this.InputAngle);
+            this.GonioPanel.Controls.Add(this.InputAmount);
             this.GonioPanel.Controls.Add(this.label6);
             this.GonioPanel.Controls.Add(this.label5);
             this.GonioPanel.Enabled = false;
@@ -134,21 +134,21 @@
             this.GonioPanel.Size = new System.Drawing.Size(348, 27);
             this.GonioPanel.TabIndex = 7;
             // 
-            // InputWinkel
+            // InputAngle
             // 
-            this.InputWinkel.Location = new System.Drawing.Point(205, 3);
-            this.InputWinkel.Name = "InputWinkel";
-            this.InputWinkel.Size = new System.Drawing.Size(140, 20);
-            this.InputWinkel.TabIndex = 8;
-            this.InputWinkel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputAngle.Location = new System.Drawing.Point(205, 3);
+            this.InputAngle.Name = "InputAngle";
+            this.InputAngle.Size = new System.Drawing.Size(140, 20);
+            this.InputAngle.TabIndex = 8;
+            this.InputAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
-            // InputBetrag
+            // InputAmount
             // 
-            this.InputBetrag.Location = new System.Drawing.Point(35, 3);
-            this.InputBetrag.Name = "InputBetrag";
-            this.InputBetrag.Size = new System.Drawing.Size(140, 20);
-            this.InputBetrag.TabIndex = 7;
-            this.InputBetrag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputAmount.Location = new System.Drawing.Point(35, 3);
+            this.InputAmount.Name = "InputAmount";
+            this.InputAmount.Size = new System.Drawing.Size(140, 20);
+            this.InputAmount.TabIndex = 7;
+            this.InputAmount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
             // label6
             // 
@@ -170,8 +170,8 @@
             // 
             // ExponPanel
             // 
-            this.ExponPanel.Controls.Add(this.textBox1);
-            this.ExponPanel.Controls.Add(this.textBox2);
+            this.ExponPanel.Controls.Add(this.InputExpImag);
+            this.ExponPanel.Controls.Add(this.InputExpReal);
             this.ExponPanel.Controls.Add(this.label3);
             this.ExponPanel.Controls.Add(this.label4);
             this.ExponPanel.Enabled = false;
@@ -180,21 +180,21 @@
             this.ExponPanel.Size = new System.Drawing.Size(348, 27);
             this.ExponPanel.TabIndex = 8;
             // 
-            // textBox1
+            // InputExpImag
             // 
-            this.textBox1.Location = new System.Drawing.Point(203, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(140, 20);
-            this.textBox1.TabIndex = 8;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputExpImag.Location = new System.Drawing.Point(203, 3);
+            this.InputExpImag.Name = "InputExpImag";
+            this.InputExpImag.Size = new System.Drawing.Size(140, 20);
+            this.InputExpImag.TabIndex = 8;
+            this.InputExpImag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
-            // textBox2
+            // InputExpReal
             // 
-            this.textBox2.Location = new System.Drawing.Point(35, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(140, 20);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputExpReal.Location = new System.Drawing.Point(35, 3);
+            this.InputExpReal.Name = "InputExpReal";
+            this.InputExpReal.Size = new System.Drawing.Size(140, 20);
+            this.InputExpReal.TabIndex = 7;
+            this.InputExpReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
             // label3
             // 
@@ -216,8 +216,8 @@
             // 
             // KartPanel
             // 
-            this.KartPanel.Controls.Add(this.InputImag);
-            this.KartPanel.Controls.Add(this.InputReal);
+            this.KartPanel.Controls.Add(this.InputKarImag);
+            this.KartPanel.Controls.Add(this.InputKarReal);
             this.KartPanel.Controls.Add(this.label1);
             this.KartPanel.Controls.Add(this.label2);
             this.KartPanel.Location = new System.Drawing.Point(142, 12);
@@ -266,19 +266,19 @@
         private System.Windows.Forms.RadioButton KartRadio;
         private System.Windows.Forms.RadioButton GonioRadio;
         private System.Windows.Forms.RadioButton ExponRadio;
-        private System.Windows.Forms.TextBox InputReal;
-        private System.Windows.Forms.TextBox InputImag;
+        private System.Windows.Forms.TextBox InputKarReal;
+        private System.Windows.Forms.TextBox InputKarImag;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel GonioPanel;
         private System.Windows.Forms.Panel ExponPanel;
         private System.Windows.Forms.Panel KartPanel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox InputExpImag;
+        private System.Windows.Forms.TextBox InputExpReal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox InputWinkel;
-        private System.Windows.Forms.TextBox InputBetrag;
+        private System.Windows.Forms.TextBox InputAngle;
+        private System.Windows.Forms.TextBox InputAmount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Btn_DoMath;
