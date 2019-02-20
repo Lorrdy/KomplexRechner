@@ -47,9 +47,31 @@
             this.label4 = new System.Windows.Forms.Label();
             this.KartPanel = new System.Windows.Forms.Panel();
             this.Btn_DoMath = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Real = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Imaginär = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBoxOperation = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.textBoxOpNr2 = new System.Windows.Forms.TextBox();
+            this.textBoxOpNr1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxResultName = new System.Windows.Forms.TextBox();
+            this.BTSave = new System.Windows.Forms.Button();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.BTReslutSave = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.BTConversion = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BTClear = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.GonioPanel.SuspendLayout();
             this.ExponPanel.SuspendLayout();
             this.KartPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // KartRadio
@@ -235,11 +257,192 @@
             this.Btn_DoMath.UseVisualStyleBackColor = true;
             this.Btn_DoMath.Click += new System.EventHandler(this.Btn_DoMath_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Real,
+            this.Imaginär});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 375);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(478, 150);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Real
+            // 
+            this.Real.HeaderText = "Real";
+            this.Real.Name = "Real";
+            // 
+            // Imaginär
+            // 
+            this.Imaginär.HeaderText = "Imaginär";
+            this.Imaginär.Name = "Imaginär";
+            // 
+            // comboBoxOperation
+            // 
+            this.comboBoxOperation.FormattingEnabled = true;
+            this.comboBoxOperation.Items.AddRange(new object[] {
+            "+",
+            "-",
+            "*",
+            "/"});
+            this.comboBoxOperation.Location = new System.Drawing.Point(52, 37);
+            this.comboBoxOperation.Name = "comboBoxOperation";
+            this.comboBoxOperation.Size = new System.Drawing.Size(23, 21);
+            this.comboBoxOperation.TabIndex = 13;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.textBoxResultName);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.textBoxOpNr1);
+            this.panel1.Controls.Add(this.textBoxOpNr2);
+            this.panel1.Controls.Add(this.comboBoxOperation);
+            this.panel1.Location = new System.Drawing.Point(12, 531);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(270, 70);
+            this.panel1.TabIndex = 14;
+            // 
+            // textBoxOpNr2
+            // 
+            this.textBoxOpNr2.Location = new System.Drawing.Point(81, 38);
+            this.textBoxOpNr2.Name = "textBoxOpNr2";
+            this.textBoxOpNr2.Size = new System.Drawing.Size(25, 20);
+            this.textBoxOpNr2.TabIndex = 14;
+            // 
+            // textBoxOpNr1
+            // 
+            this.textBoxOpNr1.Location = new System.Drawing.Point(14, 38);
+            this.textBoxOpNr1.Name = "textBoxOpNr1";
+            this.textBoxOpNr1.Size = new System.Drawing.Size(30, 20);
+            this.textBoxOpNr1.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(112, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(13, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "=";
+            // 
+            // textBoxResultName
+            // 
+            this.textBoxResultName.Location = new System.Drawing.Point(130, 37);
+            this.textBoxResultName.Name = "textBoxResultName";
+            this.textBoxResultName.Size = new System.Drawing.Size(30, 20);
+            this.textBoxResultName.TabIndex = 17;
+            // 
+            // BTSave
+            // 
+            this.BTSave.Location = new System.Drawing.Point(334, 111);
+            this.BTSave.Name = "BTSave";
+            this.BTSave.Size = new System.Drawing.Size(75, 23);
+            this.BTSave.TabIndex = 15;
+            this.BTSave.Text = "Speichern";
+            this.BTSave.UseVisualStyleBackColor = true;
+            this.BTSave.Click += new System.EventHandler(this.BTSave_Click);
+            // 
+            // textBoxName
+            // 
+            this.textBoxName.Location = new System.Drawing.Point(228, 114);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 20);
+            this.textBoxName.TabIndex = 16;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(184, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(21, 13);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "ID:";
+            // 
+            // BTReslutSave
+            // 
+            this.BTReslutSave.Location = new System.Drawing.Point(324, 540);
+            this.BTReslutSave.Name = "BTReslutSave";
+            this.BTReslutSave.Size = new System.Drawing.Size(126, 23);
+            this.BTReslutSave.TabIndex = 18;
+            this.BTReslutSave.Text = "Eigebnis speichern";
+            this.BTReslutSave.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(112, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "ErgebnissID";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(138, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(19, 13);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "↓";
+            // 
+            // BTConversion
+            // 
+            this.BTConversion.Location = new System.Drawing.Point(322, 569);
+            this.BTConversion.Name = "BTConversion";
+            this.BTConversion.Size = new System.Drawing.Size(128, 23);
+            this.BTConversion.TabIndex = 19;
+            this.BTConversion.Text = "Ergebnis umrechnung";
+            this.BTConversion.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(117, 626);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 20;
+            // 
+            // BTClear
+            // 
+            this.BTClear.Location = new System.Drawing.Point(228, 623);
+            this.BTClear.Name = "BTClear";
+            this.BTClear.Size = new System.Drawing.Size(75, 23);
+            this.BTClear.TabIndex = 21;
+            this.BTClear.Text = "Löschen";
+            this.BTClear.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(23, 626);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Datensatz löschen";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 450);
+            this.ClientSize = new System.Drawing.Size(502, 658);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.BTClear);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BTConversion);
+            this.Controls.Add(this.BTReslutSave);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.BTSave);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Btn_DoMath);
             this.Controls.Add(this.KartPanel);
             this.Controls.Add(this.ExponPanel);
@@ -256,6 +459,9 @@
             this.ExponPanel.PerformLayout();
             this.KartPanel.ResumeLayout(false);
             this.KartPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,6 +488,26 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Btn_DoMath;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Real;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Imaginär;
+        private System.Windows.Forms.ComboBox comboBoxOperation;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBoxResultName;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxOpNr1;
+        private System.Windows.Forms.TextBox textBoxOpNr2;
+        private System.Windows.Forms.Button BTSave;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button BTReslutSave;
+        private System.Windows.Forms.Button BTConversion;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button BTClear;
+        private System.Windows.Forms.Label label11;
     }
 }
 
