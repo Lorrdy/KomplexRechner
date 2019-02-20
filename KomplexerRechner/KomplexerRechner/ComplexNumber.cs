@@ -34,8 +34,9 @@ namespace KomplexerRechner
 
         public void KarToExp()
         {
-            exp_Real = Math.Pow(Math.E, kar_Real) * Math.Cos(kar_Imag);
-            exp_Imag = Math.Pow(Math.E, kar_Real) * Math.Sin(kar_Imag);
+            //Falsche Sache (Form nicht Funktion!)
+            //exp_Real = Math.Pow(Math.E, kar_Real) * Math.Cos(kar_Imag);
+            //exp_Imag = Math.Pow(Math.E, kar_Real) * Math.Sin(kar_Imag);
         }
 
         public void PolToKar()
