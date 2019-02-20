@@ -90,5 +90,15 @@ namespace KomplexerRechner
                 InputKarImag.Text = Convert.ToString(complex.Kar_Imag);
             }
         }
+
+        private void BTSave_Click(object sender, EventArgs e)
+        {
+            
+            string name, R, I;
+            name = textBoxName.Text;
+            R = InputKarReal.Text;
+            I = InputKarImag.Text;
+            dataGridView1.Rows.Add(name, R, I);
+        }
     }
 }
