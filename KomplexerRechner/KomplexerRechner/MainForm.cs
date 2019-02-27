@@ -17,6 +17,12 @@ namespace KomplexerRechner
         public MainForm()
         {
             InitializeComponent();
+
+            dataGridView1.Rows.Add(10);
+            for(int i = 0; i < 9; i++)
+            {
+                dataGridView1.Rows[i].Cells[0].Value = Convert.ToString(i);
+            }
         }
 
         private void KartRadio_CheckedChanged(object sender, EventArgs e)
@@ -119,7 +125,7 @@ namespace KomplexerRechner
                         do
                         {
                             i++;
-                            cell = Convert.ToString(dataGridView1.Rows[0].Cells[i].Value);
+                            cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
 
                             if (cell == name)
                             {
@@ -144,7 +150,7 @@ namespace KomplexerRechner
                     do
                     {
                         i++;
-                        cell = Convert.ToString(dataGridView1.Rows[0].Cells[i].Value);
+                        cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
                         if (cell == name)
                         {
                             match = true;
@@ -163,6 +169,40 @@ namespace KomplexerRechner
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void BTClear_Click(object sender, EventArgs e)
+        {
+            bool match=false;
+            string ID, cell, cellzero;
+            int i,Anzahl;
+            ID=textBoxClear.Text;
+            i = 0;
+            Anzahl = dataGridView1.RowCount;
+            cellzero = Convert.ToString(dataGridView1.Rows[0].Cells[0].Value);
+            if (String.IsNullOrEmpty(cellzero))
+            {
+                MessageBox.Show("Es gibt keinen Datensatz zum Löschen!");
+                return;
+            }
+            do
+            {
+                cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
+                if (cell == ID)
+                {
+                    match = true;
+                }
+            } while (match == false|| i<Anzahl-1);
+            if (match == false)
+            {
+                MessageBox.Show("Datensatz mit angegebener ID nicht vorhanden!");
+                return;
+            }
+            else
+            {
+                
+            }
 
         }
     }
