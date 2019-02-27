@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using KomplexerRechner;
 
-namespace ComplexUnitTestProject
+namespace KomplexerRechner.Tests
 {
     [TestClass]
     public class UnitTest1
@@ -9,6 +10,7 @@ namespace ComplexUnitTestProject
         [TestMethod]
         public void TestMethod1()
         {
+            MathComplex c;
         }
     }
 }

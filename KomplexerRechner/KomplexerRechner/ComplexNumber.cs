@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace KomplexerRechner
 {
-    class ComplexNumber
+    public class ComplexNumber
     {
-        private double kar_Real;
-        private double kar_Imag;
+        private double real;
+        private double imag;
         private double amount;
         private double angle;
 
-        public double Kar_Real { get => kar_Real; set => kar_Real = value; }
+        public double Real { get => real; set => real = value; }
 
-        public double Kar_Imag { get => kar_Imag; set => kar_Imag = value; }
+        public double Imag { get => imag; set => imag = value; }
 
         public double Amount { get => amount; set => amount = value; }
 
@@ -23,14 +23,14 @@ namespace KomplexerRechner
 
         public void KarToPol()
         {
-            amount = Math.Sqrt(Math.Pow(kar_Real, 2) + Math.Pow(kar_Imag, 2));
-            angle = Math.Atan(kar_Imag / kar_Real);
+            amount = Math.Sqrt(Math.Pow(real, 2) + Math.Pow(imag, 2));
+            angle = Math.Atan(imag / real);
         }
 
         public void PolToKar()
         {
-            kar_Real = amount * Math.Cos(angle);
-            kar_Imag = amount * Math.Sin(angle);
+            real = amount * Math.Cos(angle);
+            imag = amount * Math.Sin(angle);
         }
     }
 }

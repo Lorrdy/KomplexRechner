@@ -28,3 +28,9 @@ C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerR
 C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.CoreCompileInputs.cache
 C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
 C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll

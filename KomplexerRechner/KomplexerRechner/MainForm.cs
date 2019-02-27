@@ -70,8 +70,8 @@ namespace KomplexerRechner
         {
             if (KartRadio.Checked)
             {
-                complex.Kar_Real = Convert.ToDouble(InputKarReal.Text);
-                complex.Kar_Imag = Convert.ToDouble(InputKarImag.Text);
+                complex.Real = Convert.ToDouble(InputKarReal.Text);
+                complex.Imag = Convert.ToDouble(InputKarImag.Text);
 
                 complex.KarToPol();
 
@@ -86,8 +86,8 @@ namespace KomplexerRechner
 
                 complex.PolToKar();
 
-                InputKarReal.Text = Convert.ToString(complex.Kar_Real);
-                InputKarImag.Text = Convert.ToString(complex.Kar_Imag);
+                InputKarReal.Text = Convert.ToString(complex.Real);
+                InputKarImag.Text = Convert.ToString(complex.Imag);
             }
         }
 
