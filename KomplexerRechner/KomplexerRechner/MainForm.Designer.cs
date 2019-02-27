@@ -451,7 +451,8 @@
             this.Controls.Add(this.GonioRadio);
             this.Controls.Add(this.KartRadio);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Rechner Komplexe Zahlen";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GonioPanel.ResumeLayout(false);
             this.GonioPanel.PerformLayout();
             this.ExponPanel.ResumeLayout(false);
