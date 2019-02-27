@@ -53,16 +53,16 @@
             this.Imaginär = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxOperation = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBoxOpNr2 = new System.Windows.Forms.TextBox();
-            this.textBoxOpNr1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.textBoxResultName = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxOpNr1 = new System.Windows.Forms.TextBox();
+            this.textBoxOpNr2 = new System.Windows.Forms.TextBox();
             this.BTSave = new System.Windows.Forms.Button();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.BTReslutSave = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.BTConversion = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.BTClear = new System.Windows.Forms.Button();
@@ -311,19 +311,30 @@
             this.panel1.Size = new System.Drawing.Size(270, 70);
             this.panel1.TabIndex = 14;
             // 
-            // textBoxOpNr2
+            // label10
             // 
-            this.textBoxOpNr2.Location = new System.Drawing.Point(81, 38);
-            this.textBoxOpNr2.Name = "textBoxOpNr2";
-            this.textBoxOpNr2.Size = new System.Drawing.Size(25, 20);
-            this.textBoxOpNr2.TabIndex = 14;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(138, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(19, 13);
+            this.label10.TabIndex = 19;
+            this.label10.Text = "↓";
             // 
-            // textBoxOpNr1
+            // label9
             // 
-            this.textBoxOpNr1.Location = new System.Drawing.Point(14, 38);
-            this.textBoxOpNr1.Name = "textBoxOpNr1";
-            this.textBoxOpNr1.Size = new System.Drawing.Size(30, 20);
-            this.textBoxOpNr1.TabIndex = 15;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(112, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "ErgebnissID";
+            // 
+            // textBoxResultName
+            // 
+            this.textBoxResultName.Location = new System.Drawing.Point(130, 37);
+            this.textBoxResultName.Name = "textBoxResultName";
+            this.textBoxResultName.Size = new System.Drawing.Size(30, 20);
+            this.textBoxResultName.TabIndex = 17;
             // 
             // label7
             // 
@@ -334,12 +345,19 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "=";
             // 
-            // textBoxResultName
+            // textBoxOpNr1
             // 
-            this.textBoxResultName.Location = new System.Drawing.Point(130, 37);
-            this.textBoxResultName.Name = "textBoxResultName";
-            this.textBoxResultName.Size = new System.Drawing.Size(30, 20);
-            this.textBoxResultName.TabIndex = 17;
+            this.textBoxOpNr1.Location = new System.Drawing.Point(14, 38);
+            this.textBoxOpNr1.Name = "textBoxOpNr1";
+            this.textBoxOpNr1.Size = new System.Drawing.Size(30, 20);
+            this.textBoxOpNr1.TabIndex = 15;
+            // 
+            // textBoxOpNr2
+            // 
+            this.textBoxOpNr2.Location = new System.Drawing.Point(81, 38);
+            this.textBoxOpNr2.Name = "textBoxOpNr2";
+            this.textBoxOpNr2.Size = new System.Drawing.Size(25, 20);
+            this.textBoxOpNr2.TabIndex = 14;
             // 
             // BTSave
             // 
@@ -373,26 +391,8 @@
             this.BTReslutSave.Name = "BTReslutSave";
             this.BTReslutSave.Size = new System.Drawing.Size(126, 23);
             this.BTReslutSave.TabIndex = 18;
-            this.BTReslutSave.Text = "Eigebnis speichern";
+            this.BTReslutSave.Text = "Ergebnis speichern";
             this.BTReslutSave.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(112, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 13);
-            this.label9.TabIndex = 18;
-            this.label9.Text = "ErgebnissID";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(138, 22);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(19, 13);
-            this.label10.TabIndex = 19;
-            this.label10.Text = "↓";
             // 
             // BTConversion
             // 
@@ -452,7 +452,6 @@
             this.Controls.Add(this.KartRadio);
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GonioPanel.ResumeLayout(false);
             this.GonioPanel.PerformLayout();
             this.ExponPanel.ResumeLayout(false);
