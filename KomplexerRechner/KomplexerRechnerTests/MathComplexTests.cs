@@ -89,10 +89,10 @@ namespace KomplexerRechner.Tests
                 Imag = -1.2
             };
 
-            ComplexNumber solution = MathComplex.Mul(number1, number2);
+            ComplexNumber solution = MathComplex.Div(number1, number2);
 
-            Assert.AreEqual( 18 / 85, solution.Real);
-            Assert.AreEqual(149 / 85, solution.Imag);
+            Assert.AreEqual(Math.Round( 18.0 / 85.0, 3), solution.Real);
+            Assert.AreEqual(Math.Round(149.0 / 85.0, 3), solution.Imag);
         }
         //(2.4+2.2i)/(1.4-1.2i) = (18/85)+(149/85)*1i
 

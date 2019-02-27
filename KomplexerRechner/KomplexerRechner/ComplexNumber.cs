@@ -21,12 +21,14 @@ namespace KomplexerRechner
 
         public double Angle { get => angle; set => angle = value; }
 
+        //Kartetisch zu Polar
         public void KarToPol()
         {
             amount = Math.Sqrt(Math.Pow(real, 2) + Math.Pow(imag, 2));
             angle = Math.Atan(imag / real);
         }
 
+        //Polar zu Kartetisch
         public void PolToKar()
         {
             real = amount * Math.Cos(angle);
