@@ -34,3 +34,13 @@ C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRe
 C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
 C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
 C:\Users\steffen.ulrich\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe.config
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.pdb
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csprojAssemblyReference.cache
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.MainForm.resources
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.Properties.Resources.resources
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.GenerateResource.cache
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.CoreCompileInputs.cache
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb

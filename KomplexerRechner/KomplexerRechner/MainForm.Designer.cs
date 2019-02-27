@@ -64,7 +64,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.BTReslutSave = new System.Windows.Forms.Button();
             this.BTConversion = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxClear = new System.Windows.Forms.TextBox();
             this.BTClear = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.GonioPanel.SuspendLayout();
@@ -403,12 +403,12 @@
             this.BTConversion.Text = "Ergebnis umrechnung";
             this.BTConversion.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxClear
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 626);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 20;
+            this.textBoxClear.Location = new System.Drawing.Point(117, 626);
+            this.textBoxClear.Name = "textBoxClear";
+            this.textBoxClear.Size = new System.Drawing.Size(100, 20);
+            this.textBoxClear.TabIndex = 20;
             // 
             // BTClear
             // 
@@ -418,6 +418,7 @@
             this.BTClear.TabIndex = 21;
             this.BTClear.Text = "Löschen";
             this.BTClear.UseVisualStyleBackColor = true;
+            this.BTClear.Click += new System.EventHandler(this.BTClear_Click);
             // 
             // label11
             // 
@@ -435,7 +436,7 @@
             this.ClientSize = new System.Drawing.Size(502, 658);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BTClear);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxClear);
             this.Controls.Add(this.BTConversion);
             this.Controls.Add(this.BTReslutSave);
             this.Controls.Add(this.label8);
@@ -505,7 +506,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button BTReslutSave;
         private System.Windows.Forms.Button BTConversion;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxClear;
         private System.Windows.Forms.Button BTClear;
         private System.Windows.Forms.Label label11;
     }
