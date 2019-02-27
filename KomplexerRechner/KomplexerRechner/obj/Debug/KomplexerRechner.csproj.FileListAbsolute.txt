@@ -28,3 +28,13 @@ C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerR
 C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.CoreCompileInputs.cache
 C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
 C:\Users\giltjes.fillip\Source\Repos\KomplexRechner2\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe.config
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.exe
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\bin\Debug\KomplexerRechner.pdb
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csprojAssemblyReference.cache
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.MainForm.resources
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.Properties.Resources.resources
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.GenerateResource.cache
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.csproj.CoreCompileInputs.cache
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.exe
+C:\Users\giltjes.fillip\Source\Repos\KomplexRechner\KomplexerRechner\KomplexerRechner\obj\Debug\KomplexerRechner.pdb
