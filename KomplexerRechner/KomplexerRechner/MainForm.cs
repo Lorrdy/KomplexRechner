@@ -13,16 +13,17 @@ namespace KomplexerRechner
     public partial class MainForm : Form
     {
         ComplexNumber complex = new ComplexNumber();
+        ComplexNumber complex1 = new ComplexNumber();
+        ComplexNumber complex2 = new ComplexNumber();
+        ComplexNumber complexresult = new ComplexNumber();
+        int pos = 1;
+
 
         public MainForm()
         {
             InitializeComponent();
 
-            dataGridView1.Rows.Add(10);
-            for(int i = 0; i < 9; i++)
-            {
-                dataGridView1.Rows[i].Cells[0].Value = Convert.ToString(i);
-            }
+            
         }
 
         private void KartRadio_CheckedChanged(object sender, EventArgs e)
@@ -99,77 +100,90 @@ namespace KomplexerRechner
 
         private void BTSave_Click(object sender, EventArgs e)
         {
-            int i, x, Anzahl;
-            string name, R, I, cell, cellzero;
-            bool match;
-            name = textBoxName.Text;
-            R = InputKarReal.Text;
-            I = InputKarImag.Text;
-            i = 0;
-            x = 1;
-            Anzahl = dataGridView1.RowCount;
-            cellzero = Convert.ToString(dataGridView1.Rows[0].Cells[0].Value);
-            if (String.IsNullOrEmpty(name))
+            //int i, x, Anzahl;
+            //string name, R, I, cell, cellzero;
+            //bool match;
+            //name = textBoxName.Text;
+            //R = InputKarReal.Text;
+            //I = InputKarImag.Text;
+            //i = 0;
+            //x = 1;
+            //Anzahl = dataGridView1.RowCount;
+            //cellzero = Convert.ToString(dataGridView1.Rows[0].Cells[0].Value);
+            //if (String.IsNullOrEmpty(name))
+            //{
+            //    if (String.IsNullOrEmpty(cellzero))
+            //    {
+            //        name= "z1";   
+            //    }
+            //    else
+            //    {
+            //        do
+            //        {
+            //            name = "z" + x;
+            //            match = false;
+            //            i = -1;
+            //            do
+            //            {
+            //                i++;
+            //                cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
+
+            //                if (cell == name)
+            //                {
+            //                    match = true;
+            //                }
+
+            //            } while (match == false && i < Anzahl-1);
+            //            x++;
+            //        } while (match == true );
+            //    }
+
+            //}
+            //else
+            //{
+            //    if (String.IsNullOrEmpty(cellzero))
+            //    {
+            //    }
+            //    else
+            //    {
+            //        match = false;
+            //        i = -1;
+            //        do
+            //        {
+            //            i++;
+            //            cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
+            //            if (cell == name)
+            //            {
+            //                match = true;
+            //            }
+            //            i++;
+            //        } while (match == false && i == Anzahl-1);
+            //        if (match == true)
+            //        {
+            //            MessageBox.Show("ID wird schon verwendet");
+            //            return;
+            //        }
+            //    }
+            //}
+            //dataGridView1.Rows.Add(name, R, I);
+            if (pos == 1)
             {
-                if (String.IsNullOrEmpty(cellzero))
-                {
-                    name= "z1";   
-                }
-                else
-                {
-                    do
-                    {
-                        name = "z" + x;
-                        match = false;
-                        i = -1;
-                        do
-                        {
-                            i++;
-                            cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
-
-                            if (cell == name)
-                            {
-                                match = true;
-                            }
-                            
-                        } while (match == false && i < Anzahl-1);
-                        x++;
-                    } while (match == true );
-                }
-                
+                complex1.Real = Convert.ToDouble(InputKarReal.Text);
+                complex1.Imag = Convert.ToDouble(InputKarImag.Text);
+                textBoxOpNr1.Text = textBoxName.Text;
             }
-            else
+            if (pos == 2)
             {
-                if (String.IsNullOrEmpty(cellzero))
-                {
-                }
-                else
-                {
-                    match = false;
-                    i = -1;
-                    do
-                    {
-                        i++;
-                        cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
-                        if (cell == name)
-                        {
-                            match = true;
-                        }
-                        i++;
-                    } while (match == false && i == Anzahl-1);
-                    if (match == true)
-                    {
-                        MessageBox.Show("ID wird schon verwendet");
-                        return;
-                    }
-                }
+                complex2.Real = Convert.ToDouble(InputKarReal.Text);
+                complex2.Imag = Convert.ToDouble(InputKarImag.Text);
+                textBoxOpNr2.Text = textBoxName.Text;
             }
-            dataGridView1.Rows.Add(name, R, I);
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
+            pos++;
+            if ( pos > 2)
+            {
+                pos = 1;
+            }
+            
         }
 
         private void BTClear_Click(object sender, EventArgs e)
@@ -204,6 +218,62 @@ namespace KomplexerRechner
                 
             }
 
+        }
+
+        private void BTCalculate_Click(object sender, EventArgs e)
+        {
+            string Oparation = comboBoxOperation.Text;
+            switch (Oparation)
+            {
+                case "+":
+                    complexresult = MathComplex.Add(complex1, complex2);
+                    if (complexresult.Imag > 0)
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    else
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    break;
+                case "-":
+                    complexresult = MathComplex.Sub(complex1, complex2);
+                    if (complexresult.Imag > 0)
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    else
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    break;
+                case "*":
+                    complexresult = MathComplex.Mul(complex1, complex2);
+                    if (complexresult.Imag > 0)
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    else
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    break;
+                case "/":
+                    complexresult = MathComplex.Div(complex1, complex2);
+                    if (complexresult.Imag > 0)
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    else
+                    {
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                    }
+                    break;
+                default:
+                    MessageBox.Show("Es ist ein Fehler aufgetreten!");
+                    break;
+
+            }
         }
     }
 }

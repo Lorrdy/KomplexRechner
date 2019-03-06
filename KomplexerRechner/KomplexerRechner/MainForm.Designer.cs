@@ -67,6 +67,8 @@
             this.textBoxClear = new System.Windows.Forms.TextBox();
             this.BTClear = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.BTCalculate = new System.Windows.Forms.Button();
+            this.labelreslut = new System.Windows.Forms.Label();
             this.GonioPanel.SuspendLayout();
             this.ExponPanel.SuspendLayout();
             this.KartPanel.SuspendLayout();
@@ -429,11 +431,31 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Datensatz löschen";
             // 
+            // BTCalculate
+            // 
+            this.BTCalculate.Location = new System.Drawing.Point(324, 598);
+            this.BTCalculate.Name = "BTCalculate";
+            this.BTCalculate.Size = new System.Drawing.Size(126, 23);
+            this.BTCalculate.TabIndex = 24;
+            this.BTCalculate.Text = "Ergebnis berechnen";
+            this.BTCalculate.UseVisualStyleBackColor = true;
+            this.BTCalculate.Click += new System.EventHandler(this.BTCalculate_Click);
+            // 
+            // labelreslut
+            // 
+            this.labelreslut.AutoSize = true;
+            this.labelreslut.Location = new System.Drawing.Point(41, 146);
+            this.labelreslut.Name = "labelreslut";
+            this.labelreslut.Size = new System.Drawing.Size(0, 13);
+            this.labelreslut.TabIndex = 25;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 658);
+            this.Controls.Add(this.labelreslut);
+            this.Controls.Add(this.BTCalculate);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BTClear);
             this.Controls.Add(this.textBoxClear);
@@ -453,7 +475,6 @@
             this.Controls.Add(this.KartRadio);
             this.Name = "MainForm";
             this.Text = "Rechner Komplexe Zahlen";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GonioPanel.ResumeLayout(false);
             this.GonioPanel.PerformLayout();
             this.ExponPanel.ResumeLayout(false);
@@ -509,6 +530,8 @@
         private System.Windows.Forms.TextBox textBoxClear;
         private System.Windows.Forms.Button BTClear;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button BTCalculate;
+        private System.Windows.Forms.Label labelreslut;
     }
 }
 
