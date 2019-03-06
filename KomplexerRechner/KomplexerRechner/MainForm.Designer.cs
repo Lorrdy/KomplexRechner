@@ -30,7 +30,6 @@
         {
             this.KartRadio = new System.Windows.Forms.RadioButton();
             this.GonioRadio = new System.Windows.Forms.RadioButton();
-            this.ExponRadio = new System.Windows.Forms.RadioButton();
             this.InputKarReal = new System.Windows.Forms.TextBox();
             this.InputKarImag = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -67,6 +66,10 @@
             this.textBoxClear = new System.Windows.Forms.TextBox();
             this.BTClear = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.BTCalculate = new System.Windows.Forms.Button();
+            this.labelreslut = new System.Windows.Forms.Label();
+            this.labelEXfrm = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.GonioPanel.SuspendLayout();
             this.ExponPanel.SuspendLayout();
             this.KartPanel.SuspendLayout();
@@ -97,18 +100,6 @@
             this.GonioRadio.Text = "Polar Form";
             this.GonioRadio.UseVisualStyleBackColor = true;
             this.GonioRadio.CheckedChanged += new System.EventHandler(this.GonioRadio_CheckedChanged);
-            // 
-            // ExponRadio
-            // 
-            this.ExponRadio.AutoSize = true;
-            this.ExponRadio.Location = new System.Drawing.Point(12, 84);
-            this.ExponRadio.Name = "ExponRadio";
-            this.ExponRadio.Size = new System.Drawing.Size(100, 17);
-            this.ExponRadio.TabIndex = 2;
-            this.ExponRadio.TabStop = true;
-            this.ExponRadio.Text = "Exponentialform";
-            this.ExponRadio.UseVisualStyleBackColor = true;
-            this.ExponRadio.CheckedChanged += new System.EventHandler(this.ExponRadio_CheckedChanged);
             // 
             // InputKarReal
             // 
@@ -192,6 +183,7 @@
             // 
             // ExponPanel
             // 
+            this.ExponPanel.Controls.Add(this.label12);
             this.ExponPanel.Controls.Add(this.InputExpImag);
             this.ExponPanel.Controls.Add(this.InputExpReal);
             this.ExponPanel.Controls.Add(this.label3);
@@ -199,20 +191,20 @@
             this.ExponPanel.Enabled = false;
             this.ExponPanel.Location = new System.Drawing.Point(142, 78);
             this.ExponPanel.Name = "ExponPanel";
-            this.ExponPanel.Size = new System.Drawing.Size(348, 27);
+            this.ExponPanel.Size = new System.Drawing.Size(348, 57);
             this.ExponPanel.TabIndex = 8;
             // 
             // InputExpImag
             // 
-            this.InputExpImag.Location = new System.Drawing.Point(203, 3);
+            this.InputExpImag.Location = new System.Drawing.Point(184, 6);
             this.InputExpImag.Name = "InputExpImag";
-            this.InputExpImag.Size = new System.Drawing.Size(140, 20);
+            this.InputExpImag.Size = new System.Drawing.Size(44, 20);
             this.InputExpImag.TabIndex = 8;
             this.InputExpImag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
             // InputExpReal
             // 
-            this.InputExpReal.Location = new System.Drawing.Point(35, 3);
+            this.InputExpReal.Location = new System.Drawing.Point(27, 23);
             this.InputExpReal.Name = "InputExpReal";
             this.InputExpReal.Size = new System.Drawing.Size(140, 20);
             this.InputExpReal.TabIndex = 7;
@@ -221,20 +213,20 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 6);
+            this.label3.Location = new System.Drawing.Point(3, 26);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(18, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "e^z =";
+            this.label3.Text = "z=";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(179, 6);
+            this.label4.Location = new System.Drawing.Point(173, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(18, 13);
+            this.label4.Size = new System.Drawing.Size(19, 13);
             this.label4.TabIndex = 10;
-            this.label4.Text = "+ i";
+            this.label4.Text = "+e";
             // 
             // KartPanel
             // 
@@ -249,7 +241,7 @@
             // 
             // Btn_DoMath
             // 
-            this.Btn_DoMath.Location = new System.Drawing.Point(415, 111);
+            this.Btn_DoMath.Location = new System.Drawing.Point(416, 141);
             this.Btn_DoMath.Name = "Btn_DoMath";
             this.Btn_DoMath.Size = new System.Drawing.Size(75, 23);
             this.Btn_DoMath.TabIndex = 10;
@@ -361,7 +353,7 @@
             // 
             // BTSave
             // 
-            this.BTSave.Location = new System.Drawing.Point(334, 111);
+            this.BTSave.Location = new System.Drawing.Point(335, 141);
             this.BTSave.Name = "BTSave";
             this.BTSave.Size = new System.Drawing.Size(75, 23);
             this.BTSave.TabIndex = 15;
@@ -371,7 +363,7 @@
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(228, 114);
+            this.textBoxName.Location = new System.Drawing.Point(229, 144);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(100, 20);
             this.textBoxName.TabIndex = 16;
@@ -379,7 +371,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(184, 116);
+            this.label8.Location = new System.Drawing.Point(185, 146);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(21, 13);
             this.label8.TabIndex = 17;
@@ -402,6 +394,7 @@
             this.BTConversion.TabIndex = 19;
             this.BTConversion.Text = "Ergebnis umrechnung";
             this.BTConversion.UseVisualStyleBackColor = true;
+            this.BTConversion.Click += new System.EventHandler(this.BTConversion_Click);
             // 
             // textBoxClear
             // 
@@ -429,11 +422,50 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "Datensatz löschen";
             // 
+            // BTCalculate
+            // 
+            this.BTCalculate.Location = new System.Drawing.Point(324, 598);
+            this.BTCalculate.Name = "BTCalculate";
+            this.BTCalculate.Size = new System.Drawing.Size(126, 23);
+            this.BTCalculate.TabIndex = 24;
+            this.BTCalculate.Text = "Ergebnis berechnen";
+            this.BTCalculate.UseVisualStyleBackColor = true;
+            this.BTCalculate.Click += new System.EventHandler(this.BTCalculate_Click);
+            // 
+            // labelreslut
+            // 
+            this.labelreslut.AutoSize = true;
+            this.labelreslut.Location = new System.Drawing.Point(38, 182);
+            this.labelreslut.Name = "labelreslut";
+            this.labelreslut.Size = new System.Drawing.Size(0, 13);
+            this.labelreslut.TabIndex = 25;
+            // 
+            // labelEXfrm
+            // 
+            this.labelEXfrm.AutoSize = true;
+            this.labelEXfrm.Location = new System.Drawing.Point(12, 84);
+            this.labelEXfrm.Name = "labelEXfrm";
+            this.labelEXfrm.Size = new System.Drawing.Size(82, 13);
+            this.labelEXfrm.TabIndex = 26;
+            this.labelEXfrm.Text = "Exponentialform";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(234, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 13);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "*φ";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(502, 658);
+            this.Controls.Add(this.labelEXfrm);
+            this.Controls.Add(this.labelreslut);
+            this.Controls.Add(this.BTCalculate);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BTClear);
             this.Controls.Add(this.textBoxClear);
@@ -448,12 +480,10 @@
             this.Controls.Add(this.KartPanel);
             this.Controls.Add(this.ExponPanel);
             this.Controls.Add(this.GonioPanel);
-            this.Controls.Add(this.ExponRadio);
             this.Controls.Add(this.GonioRadio);
             this.Controls.Add(this.KartRadio);
             this.Name = "MainForm";
             this.Text = "Rechner Komplexe Zahlen";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.GonioPanel.ResumeLayout(false);
             this.GonioPanel.PerformLayout();
             this.ExponPanel.ResumeLayout(false);
@@ -472,7 +502,6 @@
 
         private System.Windows.Forms.RadioButton KartRadio;
         private System.Windows.Forms.RadioButton GonioRadio;
-        private System.Windows.Forms.RadioButton ExponRadio;
         private System.Windows.Forms.TextBox InputKarReal;
         private System.Windows.Forms.TextBox InputKarImag;
         private System.Windows.Forms.Label label1;
@@ -509,6 +538,10 @@
         private System.Windows.Forms.TextBox textBoxClear;
         private System.Windows.Forms.Button BTClear;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button BTCalculate;
+        private System.Windows.Forms.Label labelreslut;
+        private System.Windows.Forms.Label labelEXfrm;
+        private System.Windows.Forms.Label label12;
     }
 }
 
