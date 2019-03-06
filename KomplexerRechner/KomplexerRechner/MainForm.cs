@@ -84,6 +84,8 @@ namespace KomplexerRechner
 
                 InputAmount.Text = Convert.ToString(complex.Amount);
                 InputAngle.Text = Convert.ToString(complex.Angle);
+                InputExpReal.Text = Convert.ToString(complex.Amount);
+                InputExpImag.Text = Convert.ToString(complex.Angle);
             }
 
             if (GonioRadio.Checked)
@@ -95,6 +97,8 @@ namespace KomplexerRechner
 
                 InputKarReal.Text = Convert.ToString(complex.Real);
                 InputKarImag.Text = Convert.ToString(complex.Imag);
+                InputExpReal.Text = Convert.ToString(complex.Amount);
+                InputExpImag.Text = Convert.ToString(complex.Angle);
             }
         }
 
@@ -215,7 +219,7 @@ namespace KomplexerRechner
             }
             else
             {
-                
+                dataGridView1.Rows.RemoveAt(i);
             }
 
         }
@@ -229,44 +233,44 @@ namespace KomplexerRechner
                     complexresult = MathComplex.Add(complex1, complex2);
                     if (complexresult.Imag > 0)
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     else
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     break;
                 case "-":
                     complexresult = MathComplex.Sub(complex1, complex2);
                     if (complexresult.Imag > 0)
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     else
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     break;
                 case "*":
                     complexresult = MathComplex.Mul(complex1, complex2);
                     if (complexresult.Imag > 0)
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     else
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     break;
                 case "/":
                     complexresult = MathComplex.Div(complex1, complex2);
                     if (complexresult.Imag > 0)
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     else
                     {
-                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + " + complexresult.Imag;
+                        labelreslut.Text = "Das Ergebniss der Rechenoperation lautet:" + Environment.NewLine + textBoxResultName.Text + " = " + complexresult.Real + " + i" + complexresult.Imag;
                     }
                     break;
                 default:
@@ -274,6 +278,18 @@ namespace KomplexerRechner
                     break;
 
             }
+        }
+
+        private void BTConversion_Click(object sender, EventArgs e)
+        {
+            InputKarReal.Text = Convert.ToString(complexresult.Real);
+            InputKarImag.Text = Convert.ToString(complexresult.Real);
+            complexresult.KarToPol();
+            InputAmount.Text = Convert.ToString(complexresult.Amount);
+            InputAngle.Text = Convert.ToString(complexresult.Angle);
+            InputExpReal.Text = Convert.ToString(complexresult.Amount);
+            InputExpImag.Text = Convert.ToString(complexresult.Angle);
+
         }
     }
 }
