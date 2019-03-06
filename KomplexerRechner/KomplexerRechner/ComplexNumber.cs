@@ -13,6 +13,16 @@ namespace KomplexerRechner
         private double amount;
         private double angle;
 
+        public ComplexNumber()
+        {
+        }
+
+        public ComplexNumber(double realPart, double imagPart)
+        {
+            real = realPart;
+            imag = imagPart;
+        }
+
         public double Real { get => real; set => real = value; }
 
         public double Imag { get => imag; set => imag = value; }
