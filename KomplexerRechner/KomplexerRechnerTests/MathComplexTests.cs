@@ -19,7 +19,7 @@ namespace KomplexerRechner.Tests
         {
             ComplexNumber number1 = new ComplexNumber(number1Real, number1Imag);
             ComplexNumber number2 = new ComplexNumber(number2Real, number2Imag);
-            ComplexNumber solution = MathComplex.Add(number1, number2);
+            ComplexNumber solution = ComplexNumber.Add(number1, number2);
 
             Assert.AreEqual(soulutionReal, solution.Real);
             Assert.AreEqual(solutionImag, solution.Imag);
@@ -33,7 +33,7 @@ namespace KomplexerRechner.Tests
         {
             ComplexNumber number1 = new ComplexNumber(number1Real, number1Imag);
             ComplexNumber number2 = new ComplexNumber(number2Real, number2Imag);
-            ComplexNumber solution = MathComplex.Sub(number1, number2);
+            ComplexNumber solution = ComplexNumber.Sub(number1, number2);
 
             Assert.AreEqual(soulutionReal, solution.Real);
             Assert.AreEqual(solutionImag, solution.Imag);
@@ -57,7 +57,7 @@ namespace KomplexerRechner.Tests
                 Imag = 3
             };
 
-            ComplexNumber solution = MathComplex.Mul(number1, number2);
+            ComplexNumber solution = ComplexNumber.Mul(number1, number2);
 
             Assert.AreEqual(-1.1, solution.Real);
             Assert.AreEqual(14.0, solution.Imag);
@@ -81,7 +81,7 @@ namespace KomplexerRechner.Tests
                 Imag = -1.2
             };
 
-            ComplexNumber solution = MathComplex.Div(number1, number2);
+            ComplexNumber solution = ComplexNumber.Div(number1, number2);
 
             Assert.AreEqual(Math.Round(  18.0 / 85.0, 3), solution.Real);
             Assert.AreEqual(Math.Round( 149.0 / 85.0, 3), solution.Imag);

@@ -41,8 +41,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.ExponPanel = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.InputExpImag = new System.Windows.Forms.TextBox();
-            this.InputExpReal = new System.Windows.Forms.TextBox();
+            this.InputAngle2 = new System.Windows.Forms.TextBox();
+            this.InputAmount2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.KartPanel = new System.Windows.Forms.Panel();
@@ -61,7 +61,7 @@
             this.BTConversion = new System.Windows.Forms.Button();
             this.BTCalculate = new System.Windows.Forms.Button();
             this.labelreslut = new System.Windows.Forms.Label();
-            this.labelEXfrm = new System.Windows.Forms.Label();
+            this.ExponRadio = new System.Windows.Forms.RadioButton();
             this.GonioPanel.SuspendLayout();
             this.ExponPanel.SuspendLayout();
             this.KartPanel.SuspendLayout();
@@ -175,8 +175,8 @@
             // ExponPanel
             // 
             this.ExponPanel.Controls.Add(this.label12);
-            this.ExponPanel.Controls.Add(this.InputExpImag);
-            this.ExponPanel.Controls.Add(this.InputExpReal);
+            this.ExponPanel.Controls.Add(this.InputAngle2);
+            this.ExponPanel.Controls.Add(this.InputAmount2);
             this.ExponPanel.Controls.Add(this.label3);
             this.ExponPanel.Controls.Add(this.label4);
             this.ExponPanel.Enabled = false;
@@ -188,27 +188,27 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(234, 9);
+            this.label12.Location = new System.Drawing.Point(187, 15);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 13);
+            this.label12.Size = new System.Drawing.Size(16, 13);
             this.label12.TabIndex = 11;
-            this.label12.Text = "*φ";
+            this.label12.Text = "i *";
             // 
-            // InputExpImag
+            // InputAngle2
             // 
-            this.InputExpImag.Location = new System.Drawing.Point(184, 6);
-            this.InputExpImag.Name = "InputExpImag";
-            this.InputExpImag.Size = new System.Drawing.Size(44, 20);
-            this.InputExpImag.TabIndex = 8;
-            this.InputExpImag.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputAngle2.Location = new System.Drawing.Point(209, 12);
+            this.InputAngle2.Name = "InputAngle2";
+            this.InputAngle2.Size = new System.Drawing.Size(44, 20);
+            this.InputAngle2.TabIndex = 8;
+            this.InputAngle2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
-            // InputExpReal
+            // InputAmount2
             // 
-            this.InputExpReal.Location = new System.Drawing.Point(27, 23);
-            this.InputExpReal.Name = "InputExpReal";
-            this.InputExpReal.Size = new System.Drawing.Size(140, 20);
-            this.InputExpReal.TabIndex = 7;
-            this.InputExpReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
+            this.InputAmount2.Location = new System.Drawing.Point(27, 23);
+            this.InputAmount2.Name = "InputAmount2";
+            this.InputAmount2.Size = new System.Drawing.Size(140, 20);
+            this.InputAmount2.TabIndex = 7;
+            this.InputAmount2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Input_KeyPress);
             // 
             // label3
             // 
@@ -259,8 +259,9 @@
             "/"});
             this.comboBoxOperation.Location = new System.Drawing.Point(52, 37);
             this.comboBoxOperation.Name = "comboBoxOperation";
-            this.comboBoxOperation.Size = new System.Drawing.Size(23, 21);
+            this.comboBoxOperation.Size = new System.Drawing.Size(35, 21);
             this.comboBoxOperation.TabIndex = 13;
+            this.comboBoxOperation.Text = "+";
             // 
             // panel1
             // 
@@ -271,7 +272,7 @@
             this.panel1.Controls.Add(this.textBoxOpNr1);
             this.panel1.Controls.Add(this.textBoxOpNr2);
             this.panel1.Controls.Add(this.comboBoxOperation);
-            this.panel1.Location = new System.Drawing.Point(20, 397);
+            this.panel1.Location = new System.Drawing.Point(15, 170);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 70);
             this.panel1.TabIndex = 14;
@@ -279,7 +280,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(138, 22);
+            this.label10.Location = new System.Drawing.Point(162, 22);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(19, 13);
             this.label10.TabIndex = 19;
@@ -288,7 +289,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(112, 9);
+            this.label9.Location = new System.Drawing.Point(136, 9);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 13);
             this.label9.TabIndex = 18;
@@ -296,7 +297,7 @@
             // 
             // textBoxResultName
             // 
-            this.textBoxResultName.Location = new System.Drawing.Point(130, 37);
+            this.textBoxResultName.Location = new System.Drawing.Point(154, 37);
             this.textBoxResultName.Name = "textBoxResultName";
             this.textBoxResultName.Size = new System.Drawing.Size(30, 20);
             this.textBoxResultName.TabIndex = 17;
@@ -304,7 +305,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(112, 40);
+            this.label7.Location = new System.Drawing.Point(136, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(13, 13);
             this.label7.TabIndex = 16;
@@ -319,7 +320,7 @@
             // 
             // textBoxOpNr2
             // 
-            this.textBoxOpNr2.Location = new System.Drawing.Point(81, 38);
+            this.textBoxOpNr2.Location = new System.Drawing.Point(105, 38);
             this.textBoxOpNr2.Name = "textBoxOpNr2";
             this.textBoxOpNr2.Size = new System.Drawing.Size(25, 20);
             this.textBoxOpNr2.TabIndex = 14;
@@ -352,7 +353,7 @@
             // 
             // BTConversion
             // 
-            this.BTConversion.Location = new System.Drawing.Point(326, 414);
+            this.BTConversion.Location = new System.Drawing.Point(305, 179);
             this.BTConversion.Name = "BTConversion";
             this.BTConversion.Size = new System.Drawing.Size(128, 23);
             this.BTConversion.TabIndex = 19;
@@ -362,9 +363,9 @@
             // 
             // BTCalculate
             // 
-            this.BTCalculate.Location = new System.Drawing.Point(328, 443);
+            this.BTCalculate.Location = new System.Drawing.Point(305, 204);
             this.BTCalculate.Name = "BTCalculate";
-            this.BTCalculate.Size = new System.Drawing.Size(126, 23);
+            this.BTCalculate.Size = new System.Drawing.Size(128, 23);
             this.BTCalculate.TabIndex = 24;
             this.BTCalculate.Text = "Ergebnis berechnen";
             this.BTCalculate.UseVisualStyleBackColor = true;
@@ -373,26 +374,30 @@
             // labelreslut
             // 
             this.labelreslut.AutoSize = true;
-            this.labelreslut.Location = new System.Drawing.Point(38, 182);
+            this.labelreslut.Location = new System.Drawing.Point(12, 253);
             this.labelreslut.Name = "labelreslut";
-            this.labelreslut.Size = new System.Drawing.Size(0, 13);
+            this.labelreslut.Size = new System.Drawing.Size(51, 13);
             this.labelreslut.TabIndex = 25;
+            this.labelreslut.Text = "Ergebnis:";
             // 
-            // labelEXfrm
+            // ExponRadio
             // 
-            this.labelEXfrm.AutoSize = true;
-            this.labelEXfrm.Location = new System.Drawing.Point(12, 84);
-            this.labelEXfrm.Name = "labelEXfrm";
-            this.labelEXfrm.Size = new System.Drawing.Size(82, 13);
-            this.labelEXfrm.TabIndex = 26;
-            this.labelEXfrm.Text = "Exponentialform";
+            this.ExponRadio.AutoSize = true;
+            this.ExponRadio.Location = new System.Drawing.Point(12, 100);
+            this.ExponRadio.Name = "ExponRadio";
+            this.ExponRadio.Size = new System.Drawing.Size(106, 17);
+            this.ExponRadio.TabIndex = 26;
+            this.ExponRadio.TabStop = true;
+            this.ExponRadio.Text = "Exponential Form";
+            this.ExponRadio.UseVisualStyleBackColor = true;
+            this.ExponRadio.CheckedChanged += new System.EventHandler(this.ExponRadio_CheckedChanged);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 658);
-            this.Controls.Add(this.labelEXfrm);
+            this.ClientSize = new System.Drawing.Size(502, 286);
+            this.Controls.Add(this.ExponRadio);
             this.Controls.Add(this.labelreslut);
             this.Controls.Add(this.BTCalculate);
             this.Controls.Add(this.BTConversion);
@@ -432,8 +437,8 @@
         private System.Windows.Forms.Panel GonioPanel;
         private System.Windows.Forms.Panel ExponPanel;
         private System.Windows.Forms.Panel KartPanel;
-        private System.Windows.Forms.TextBox InputExpImag;
-        private System.Windows.Forms.TextBox InputExpReal;
+        private System.Windows.Forms.TextBox InputAngle2;
+        private System.Windows.Forms.TextBox InputAmount2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox InputAngle;
@@ -455,8 +460,8 @@
         private System.Windows.Forms.Button BTConversion;
         private System.Windows.Forms.Button BTCalculate;
         private System.Windows.Forms.Label labelreslut;
-        private System.Windows.Forms.Label labelEXfrm;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.RadioButton ExponRadio;
     }
 }
 
