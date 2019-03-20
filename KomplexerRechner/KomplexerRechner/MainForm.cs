@@ -104,72 +104,7 @@ namespace KomplexerRechner
 
         private void BTSave_Click(object sender, EventArgs e)
         {
-            //int i, x, Anzahl;
-            //string name, R, I, cell, cellzero;
-            //bool match;
-            //name = textBoxName.Text;
-            //R = InputKarReal.Text;
-            //I = InputKarImag.Text;
-            //i = 0;
-            //x = 1;
-            //Anzahl = dataGridView1.RowCount;
-            //cellzero = Convert.ToString(dataGridView1.Rows[0].Cells[0].Value);
-            //if (String.IsNullOrEmpty(name))
-            //{
-            //    if (String.IsNullOrEmpty(cellzero))
-            //    {
-            //        name= "z1";   
-            //    }
-            //    else
-            //    {
-            //        do
-            //        {
-            //            name = "z" + x;
-            //            match = false;
-            //            i = -1;
-            //            do
-            //            {
-            //                i++;
-            //                cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
-
-            //                if (cell == name)
-            //                {
-            //                    match = true;
-            //                }
-
-            //            } while (match == false && i < Anzahl-1);
-            //            x++;
-            //        } while (match == true );
-            //    }
-
-            //}
-            //else
-            //{
-            //    if (String.IsNullOrEmpty(cellzero))
-            //    {
-            //    }
-            //    else
-            //    {
-            //        match = false;
-            //        i = -1;
-            //        do
-            //        {
-            //            i++;
-            //            cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
-            //            if (cell == name)
-            //            {
-            //                match = true;
-            //            }
-            //            i++;
-            //        } while (match == false && i == Anzahl-1);
-            //        if (match == true)
-            //        {
-            //            MessageBox.Show("ID wird schon verwendet");
-            //            return;
-            //        }
-            //    }
-            //}
-            //dataGridView1.Rows.Add(name, R, I);
+           
             if (pos == 1)
             {
                 complex1.Real = Convert.ToDouble(InputKarReal.Text);
