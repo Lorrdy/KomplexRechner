@@ -190,40 +190,6 @@ namespace KomplexerRechner
             
         }
 
-        private void BTClear_Click(object sender, EventArgs e)
-        {
-            bool match=false;
-            string ID, cell, cellzero;
-            int i,Anzahl;
-            ID=textBoxClear.Text;
-            i = 0;
-            Anzahl = dataGridView1.RowCount;
-            cellzero = Convert.ToString(dataGridView1.Rows[0].Cells[0].Value);
-            if (String.IsNullOrEmpty(cellzero))
-            {
-                MessageBox.Show("Es gibt keinen Datensatz zum Löschen!");
-                return;
-            }
-            do
-            {
-                cell = Convert.ToString(dataGridView1.Rows[i].Cells[0].Value);
-                if (cell == ID)
-                {
-                    match = true;
-                }
-            } while (match == false|| i<Anzahl-1);
-            if (match == false)
-            {
-                MessageBox.Show("Datensatz mit angegebener ID nicht vorhanden!");
-                return;
-            }
-            else
-            {
-                dataGridView1.Rows.RemoveAt(i);
-            }
-
-        }
-
         private void BTCalculate_Click(object sender, EventArgs e)
         {
             string Oparation = comboBoxOperation.Text;

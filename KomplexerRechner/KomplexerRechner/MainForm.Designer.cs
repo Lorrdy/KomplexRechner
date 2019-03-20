@@ -40,16 +40,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.ExponPanel = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.InputExpImag = new System.Windows.Forms.TextBox();
             this.InputExpReal = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.KartPanel = new System.Windows.Forms.Panel();
             this.Btn_DoMath = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Real = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Imaginär = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxOperation = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -61,19 +58,13 @@
             this.BTSave = new System.Windows.Forms.Button();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.BTReslutSave = new System.Windows.Forms.Button();
             this.BTConversion = new System.Windows.Forms.Button();
-            this.textBoxClear = new System.Windows.Forms.TextBox();
-            this.BTClear = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.BTCalculate = new System.Windows.Forms.Button();
             this.labelreslut = new System.Windows.Forms.Label();
             this.labelEXfrm = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.GonioPanel.SuspendLayout();
             this.ExponPanel.SuspendLayout();
             this.KartPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,6 +185,15 @@
             this.ExponPanel.Size = new System.Drawing.Size(348, 57);
             this.ExponPanel.TabIndex = 8;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(234, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(19, 13);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "*φ";
+            // 
             // InputExpImag
             // 
             this.InputExpImag.Location = new System.Drawing.Point(184, 6);
@@ -249,33 +249,6 @@
             this.Btn_DoMath.UseVisualStyleBackColor = true;
             this.Btn_DoMath.Click += new System.EventHandler(this.Btn_DoMath_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Real,
-            this.Imaginär});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 375);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(478, 150);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Real
-            // 
-            this.Real.HeaderText = "Real";
-            this.Real.Name = "Real";
-            // 
-            // Imaginär
-            // 
-            this.Imaginär.HeaderText = "Imaginär";
-            this.Imaginär.Name = "Imaginär";
-            // 
             // comboBoxOperation
             // 
             this.comboBoxOperation.FormattingEnabled = true;
@@ -298,7 +271,7 @@
             this.panel1.Controls.Add(this.textBoxOpNr1);
             this.panel1.Controls.Add(this.textBoxOpNr2);
             this.panel1.Controls.Add(this.comboBoxOperation);
-            this.panel1.Location = new System.Drawing.Point(12, 531);
+            this.panel1.Location = new System.Drawing.Point(20, 397);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(270, 70);
             this.panel1.TabIndex = 14;
@@ -377,18 +350,9 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "ID:";
             // 
-            // BTReslutSave
-            // 
-            this.BTReslutSave.Location = new System.Drawing.Point(324, 540);
-            this.BTReslutSave.Name = "BTReslutSave";
-            this.BTReslutSave.Size = new System.Drawing.Size(126, 23);
-            this.BTReslutSave.TabIndex = 18;
-            this.BTReslutSave.Text = "Ergebnis speichern";
-            this.BTReslutSave.UseVisualStyleBackColor = true;
-            // 
             // BTConversion
             // 
-            this.BTConversion.Location = new System.Drawing.Point(322, 569);
+            this.BTConversion.Location = new System.Drawing.Point(326, 414);
             this.BTConversion.Name = "BTConversion";
             this.BTConversion.Size = new System.Drawing.Size(128, 23);
             this.BTConversion.TabIndex = 19;
@@ -396,35 +360,9 @@
             this.BTConversion.UseVisualStyleBackColor = true;
             this.BTConversion.Click += new System.EventHandler(this.BTConversion_Click);
             // 
-            // textBoxClear
-            // 
-            this.textBoxClear.Location = new System.Drawing.Point(117, 626);
-            this.textBoxClear.Name = "textBoxClear";
-            this.textBoxClear.Size = new System.Drawing.Size(100, 20);
-            this.textBoxClear.TabIndex = 20;
-            // 
-            // BTClear
-            // 
-            this.BTClear.Location = new System.Drawing.Point(228, 623);
-            this.BTClear.Name = "BTClear";
-            this.BTClear.Size = new System.Drawing.Size(75, 23);
-            this.BTClear.TabIndex = 21;
-            this.BTClear.Text = "Löschen";
-            this.BTClear.UseVisualStyleBackColor = true;
-            this.BTClear.Click += new System.EventHandler(this.BTClear_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(23, 626);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 13);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Datensatz löschen";
-            // 
             // BTCalculate
             // 
-            this.BTCalculate.Location = new System.Drawing.Point(324, 598);
+            this.BTCalculate.Location = new System.Drawing.Point(328, 443);
             this.BTCalculate.Name = "BTCalculate";
             this.BTCalculate.Size = new System.Drawing.Size(126, 23);
             this.BTCalculate.TabIndex = 24;
@@ -449,15 +387,6 @@
             this.labelEXfrm.TabIndex = 26;
             this.labelEXfrm.Text = "Exponentialform";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(234, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(19, 13);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "*φ";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,16 +395,11 @@
             this.Controls.Add(this.labelEXfrm);
             this.Controls.Add(this.labelreslut);
             this.Controls.Add(this.BTCalculate);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.BTClear);
-            this.Controls.Add(this.textBoxClear);
             this.Controls.Add(this.BTConversion);
-            this.Controls.Add(this.BTReslutSave);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.BTSave);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Btn_DoMath);
             this.Controls.Add(this.KartPanel);
             this.Controls.Add(this.ExponPanel);
@@ -490,7 +414,6 @@
             this.ExponPanel.PerformLayout();
             this.KartPanel.ResumeLayout(false);
             this.KartPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -518,10 +441,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Btn_DoMath;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Real;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Imaginär;
         private System.Windows.Forms.ComboBox comboBoxOperation;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBoxResultName;
@@ -533,11 +452,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button BTReslutSave;
         private System.Windows.Forms.Button BTConversion;
-        private System.Windows.Forms.TextBox textBoxClear;
-        private System.Windows.Forms.Button BTClear;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button BTCalculate;
         private System.Windows.Forms.Label labelreslut;
         private System.Windows.Forms.Label labelEXfrm;
